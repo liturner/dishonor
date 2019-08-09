@@ -1,0 +1,9 @@
+## Interface: 30300
+## Title: Dishonor
+## Author: Turner & Pain
+## Version: 3.3.6
+## SavedVariables: TAPDH_Settings, TAPDH_Gankers
+
+TAPDH.xml
+TAPDH_Debug.xml
+TAPDH_NamePlateFunctions.lua

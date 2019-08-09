@@ -1,0 +1,108 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/FrameXML/UI.xsd">
+	<Script file="TAPDH.lua"/>
+	<Frame name="TAPDH">
+		<Scripts>
+			<OnLoad> TAPDH.OnLoad(self); </OnLoad>
+			<OnEvent> TAPDH.OnEvent(self, event, ...); </OnEvent>
+		</Scripts>
+		<!-- <Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true"> -->
+			<!-- <BackgroundInsets> -->
+				<!-- <AbsInset left="11" right="12" top="12" bottom="11"/> -->
+			<!-- </BackgroundInsets> -->
+			<!-- <TileSize> -->
+				<!-- <AbsValue val="32"/> -->
+			<!-- </TileSize> -->
+			<!-- <EdgeSize> -->
+				<!-- <AbsValue val="32"/> -->
+			<!-- </EdgeSize> -->
+		<!-- </Backdrop> -->
+		
+		<Frames>
+			<CheckButton  name="TAPDH_cbxYell" text="Enable Yell" inherits="OptionsCheckButtonTemplate">
+				<Scripts>
+					<OnLoad>
+						TAPDH.Checkbutton_OnLoad(self)
+					</OnLoad>
+				</Scripts>
+				<Anchors>
+					<Anchor point="TOPLEFT" x="25" y="-80"/>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="TAPDH_cbxEcho" text="Enable Echo" inherits="OptionsCheckButtonTemplate">
+				<Scripts>
+					<OnLoad>
+						TAPDH.Checkbutton_OnLoad(self)
+					</OnLoad>
+				</Scripts>
+				<Anchors>
+					<Anchor point="TOPLEFT" x="25" y="-110"/>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="TAPDH_cbxDebug" text="Enable Debug" inherits="OptionsCheckButtonTemplate">
+				<Scripts>
+					<OnLoad>
+						TAPDH.Checkbutton_OnLoad(self)
+					</OnLoad>
+				</Scripts>
+				<Anchors>
+					<Anchor point="TOPLEFT" x="25" y="-140"/>
+				</Anchors>
+			</CheckButton>
+			
+			<Button text="Clear Ganker Database" inherits="OptionsButtonTemplate">
+				<Size x="170" y="23"/>
+				<Anchors>
+					<Anchor point="TOPLEFT" x="16" y="-180"/>
+				</Anchors>
+				<Scripts>
+					<OnClick> TAPDH_Gankers = {}; </OnClick>
+				</Scripts>
+			</Button>
+		</Frames>
+		
+		<Layers>
+			<Layer level="OVERLAY">
+			
+				<FontString text="Dishonor" inherits="GameFontNormalLarge">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="16" y="-16"/>
+					</Anchors>
+				</FontString>
+				
+				<FontString 
+						text="Dishonor is a basic communication tool aimed at helping to publicize the names of players who attack players significantly lower level than themselves." 
+						inherits="SystemFont_Small"
+						justifyH="LEFT"
+						justifyV="TOP"
+						wordwrap="true">
+					<Size y="100"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="16" y="-40"/>
+						<Anchor point="TOPRIGHT" relativePoint="TOPRIGHT" x="-16" y="-40"/>
+					</Anchors>
+				</FontString>
+				
+				<FontString text="What to Expect" inherits="GameFontNormal">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="16" y="-240"/>
+					</Anchors>
+				</FontString>
+
+				<FontString 
+						text="Lorem Ipsum and the rest |cFFFF0000red|r is here" 
+						inherits="SystemFont_Small"
+						justifyH="LEFT"
+						justifyV="TOP"
+						wordwrap="true">
+					<Size y="100"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="16" y="-260"/>
+						<Anchor point="TOPRIGHT" relativePoint="TOPRIGHT" x="-16" y="-260"/>
+					</Anchors>
+				</FontString>
+				
+			</Layer>
+		</Layers>
+		
+	</Frame>
+</Ui>

@@ -1,0 +1,52 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/FrameXML/UI.xsd">
+	<Script file="TAPDH_Debug.lua"/>
+	<Frame name="TAPDH.Debug">
+		<Scripts>
+			<OnLoad> TAPDH.Debug.OnLoad(self); </OnLoad>
+		</Scripts>
+		<!-- <Size x="300" y="145"/> -->
+		<!-- <Anchors> -->
+			<!-- <Anchor point="TOP"/> -->
+		<!-- </Anchors> -->
+		
+		<!-- <Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true"> --> -->
+			<!-- <BackgroundInsets> -->
+				<!-- <AbsInset left="11" right="12" top="12" bottom="11"/> -->
+			<!-- </BackgroundInsets> -->
+			<!-- <TileSize> -->
+				<!-- <AbsValue val="32"/> -->
+			<!-- </TileSize> -->
+			<!-- <EdgeSize> -->
+				<!-- <AbsValue val="32"/> -->
+			<!-- </EdgeSize> -->
+		<!-- </Backdrop> -->
+		
+		<!-- <Frames> -->
+		<!-- </Frames> -->
+		
+		<!-- <Layers> -->
+			<!-- <Layer level="OVERLAY"> -->
+			    <!-- <Size x="150"/> -->
+				<!-- <FontString text="Dishonor Debug" inherits="GameFontNormalLarge"> -->
+					<!-- <Anchors> -->
+						<!-- <Anchor point="TOPLEFT" x="16" y="-16"/> -->
+					<!-- </Anchors> -->
+				<!-- </FontString> -->
+				
+				<!-- <FontString  -->
+						<!-- text="ToDo"  -->
+						<!-- inherits="SystemFont_Small" -->
+						<!-- justifyH="LEFT" -->
+						<!-- justifyV="TOP" -->
+						<!-- wordwrap="true"> -->
+					<!-- <Size y="100"/> -->
+					<!-- <Anchors> -->
+						<!-- <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="16" y="-40"/> -->
+						<!-- <Anchor point="TOPRIGHT" relativePoint="TOPRIGHT" x="-16" y="-40"/> -->
+					<!-- </Anchors> -->
+				<!-- </FontString> -->
+								
+			<!-- </Layer> -->
+		<!-- </Layers> -->
+	</Frame>
+</Ui>
